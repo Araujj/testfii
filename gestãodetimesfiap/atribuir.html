@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Times e Tarefas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="atribuir.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Seção para adicionar membros ao time -->
+        <section id="add-members">
+            <h2>Atribuir Novos Membros ao Time</h2>
+            <form class="team-form">
+                <input type="text" id="new-member-name" placeholder="Nome do Novo Membro" required>
+                <button type="button" id="assign-member">Atribuir Membro</button>
+            </form>
+        </section>
+
+        <!-- Seção para gestão de tarefas -->
+        <section id="task-management">
+            <h2>Gestão de Tarefas</h2>
+            <form class="task-form">
+                <input type="text" id="task-name" placeholder="Nome da Tarefa" required>
+                <input type="number" id="task-duration" placeholder="Duração (horas)" required>
+                <select id="task-team" required>
+                    <option value="" disabled selected>Selecionar Time</option>
+                    <option value="Time A">Time A</option>
+                    <option value="Time B">Time B</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select>
+                <button type="button" id="assign-task">Atribuir Tarefa</button>
+            </form>
+            <ul id="task-list">
+                <!-- Lista de tarefas será preenchida dinamicamente -->
+            </ul>
+        </section>
+
+        <!-- Seção para notificações de prazo -->
+        <section id="notifications">
+            <h2>Notificações de Prazo</h2>
+            <ul id="notifications-list">
+                <!-- Notificações de prazo serão preenchidas dinamicamente -->
+            </ul>
+        </section>
+    </div>
+
+    <script src="atribuir.js"></script>
+</body>
+</html>

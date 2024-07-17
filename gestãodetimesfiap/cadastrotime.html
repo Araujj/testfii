@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Time e Membros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cadastrotime.css">
+</head>
+<body>
+    <div class="container">
+        <form class="team-form">
+            <h1>Cadastro de Time e Membros</h1>
+            <div class="input-group">
+                <label for="team-name">Nome do Time</label>
+                <input type="text" id="team-name" name="team-name" required>
+            </div>
+            <div class="members">
+                <div class="member">
+                    <label for="member-name-1">Membro 1</label>
+                    <input type="text" id="member-name-1" name="member-name-1" required>
+                </div>
+            </div>
+            <button type="button" id="add-member">Adicionar Membro</button>
+            <button type="submit">Salvar Time</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
